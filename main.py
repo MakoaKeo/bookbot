@@ -7,10 +7,11 @@ def main():
 
 def get_book_text(path):
     with open(path) as f:
-        return f.read()
+        body = f.read()
+        return body
 
-def get_num_words(text)
-    num_words = len(f.read().split())
+def get_num_words(body):
+    num_words = len(body.split())
 
     return num_words
 
