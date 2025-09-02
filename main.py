@@ -5,7 +5,7 @@ def main():
 
 def get_book_text(path):
     with open(path) as f:
-        
+        return f.read()
 
 def find_word_count(path):
     book_text = []
