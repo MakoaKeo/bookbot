@@ -5,5 +5,19 @@ def main():
 
 def get_book_text(path):
     with open(path) as f:
-        return f.read()
+        
+
+def find_word_count(path):
+    book_text = []
+    num_words = []
+    
+    for word in story:
+        book_text.append(word)
+    num_words.append(len(book_text))
+
+    print(f"{num_words} words found in the document")
+
+
+
+
 main()
