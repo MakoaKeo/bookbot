@@ -15,3 +15,15 @@ def get_character_count(body):
             else:
                 character_count[letter] += 1
     return character_count
+
+
+def get_sorted_list(character_count):
+    def sort_on(items):
+        return items["num"]
+
+    dict_list = []
+    for ch, n in character_count.items():
+        dict_list.append({"char": ch, "num": n})
+
+    dict_list.sort(reverse=True, key=sort_on)
+    return dict_list
